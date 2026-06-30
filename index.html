@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joebest Sip Studio</title>
+    <meta
+      name="description"
+      content="A cute and modern drink showcase with curated brands, delightful UI, and deployment-ready tooling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">✨ Cute drinks, bright moods</p>
+          <h1>Sprinkle Sip Studio</h1>
+          <p class="lead">
+            Discover sparkling favorites, cozy teas, and juicy blends from beloved drink brands in one joyful place.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#brands">Explore brands</a>
+            <a class="btn ghost" href="#ux">See the UX method</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-bubble">Freshly poured</div>
+          <h2>Today’s favorite</h2>
+          <p>Cloudberry Sparkle with a sunny citrus twist.</p>
+          <div class="mini-stats">
+            <div><strong>24</strong><span>curated brands</span></div>
+            <div><strong>4.9/5</strong><span>happy sip score</span></div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="filter-bar" aria-label="Drink categories">
+          <button class="filter-btn active" data-filter="all">All sips</button>
+          <button class="filter-btn" data-filter="sparkling">Sparkling</button>
+          <button class="filter-btn" data-filter="tea">Tea</button>
+          <button class="filter-btn" data-filter="juice">Juice</button>
+        </section>
+
+        <section id="brands" class="brands-grid">
+          <article class="brand-card" data-category="sparkling">
+            <div class="brand-icon">🧊</div>
+            <h3>Fizzy Bloom</h3>
+            <p>Berry sparkle for bright afternoons.</p>
+            <span class="pill">Sparkling</span>
+          </article>
+          <article class="brand-card" data-category="tea">
+            <div class="brand-icon">🍵</div>
+            <h3>Moonleaf Tea</h3>
+            <p>Gentle jasmine notes with cozy calm.</p>
+            <span class="pill">Tea</span>
+          </article>
+          <article class="brand-card" data-category="juice">
+            <div class="brand-icon">🍋</div>
+            <h3>Sunbeam Juice</h3>
+            <p>Golden citrus with a cheerful pop.</p>
+            <span class="pill">Juice</span>
+          </article>
+          <article class="brand-card" data-category="sparkling">
+            <div class="brand-icon">💫</div>
+            <h3>Nova Soda</h3>
+            <p>Soft bubbles and tropical sweetness.</p>
+            <span class="pill">Sparkling</span>
+          </article>
+          <article class="brand-card" data-category="tea">
+            <div class="brand-icon">🌿</div>
+            <h3>Velvet Mint</h3>
+            <p>Cooling mint with a calm finish.</p>
+            <span class="pill">Tea</span>
+          </article>
+          <article class="brand-card" data-category="juice">
+            <div class="brand-icon">🍓</div>
+            <h3>Roseberry Rush</h3>
+            <p>Berry-rich and velvety smooth.</p>
+            <span class="pill">Juice</span>
+          </article>
+        </section>
+
+        <section id="ux" class="ux-section">
+          <div class="ux-card">
+            <h2>UI/UX method</h2>
+            <ul>
+              <li>Warm colors and rounded shapes to feel friendly and premium.</li>
+              <li>Simple navigation with clear call-to-action buttons.</li>
+              <li>Responsive cards that stay inviting on any screen size.</li>
+              <li>Micro-interactions for quick feedback and joyful browsing.</li>
+            </ul>
+          </div>
+          <div class="ux-card soft">
+            <h2>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>Crafted for delicious discovery • <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
